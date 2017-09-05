@@ -1,65 +1,640 @@
-<!DOCTYPE html>
+<!doctype html>
+
+
+<style>
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+/* Section - Parallax */
+/**************************/
+#parallax-world-of-ugg .parallax-uno {padding-top: 0%; padding-bottom: 0%; overflow: hidden; position: relative; width: 100%; height:100%; background-image: url(https://faicheck.github.io/personas.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+#parallax-world-of-ugg .parallax-tres {padding-top: 0%; padding-bottom: 0%; overflow: hidden; position: relative; width: 100%; height:100%; background-image: url(https://faicheck.github.io/dibujo.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+#parallax-world-of-ugg .parallax-cinco {padding-top: 0%; padding-bottom: 0%; overflow: hidden; position: relative; width: 100%; height:100%; background-image: url(https://faicheck.github.io/horario.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+#parallax-world-of-ugg .parallax-siete {padding-top: 0%; padding-bottom: 0%; overflow: hidden; position: relative; width: 100%; height:100%; background-image: url(https://faicheck.github.io/android.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+
+#parallax-world-of-ugg .parallax-dos {background: #eeeeee;padding-top: 0%; padding-bottom: 0%; overflow: hidden; position: relative; width: 100%; height:100%;}
+#parallax-world-of-ugg .parallax-cuatro {background: #eeeeee;padding-top: 0%; padding-bottom: 0%; overflow: hidden; position: relative; width: 100%; height:100%;}
+#parallax-world-of-ugg .parallax-seis {background: #eeeeee;padding-top: 0%; padding-bottom: 0%; overflow: hidden; position: relative; width: 100%; height:100%;}
+
+.grad {
+    background: -webkit-linear-gradient(left, rgba(204,204,204,0),rgba(253,244,200,255), rgba(255,0,0,1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgba(204,204,204,255),rgba(253,244,200,255), rgba(204,204,204,1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgba(204,204,204,0),rgba(253,244,200,255), rgba(255,0,0,1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgba(204,204,204,0),rgba(253,244,200,255), rgba(204,204,204,1)); /* Standard syntax (must be last) */
+}
+
+.blur {
+
+-webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  
+}
+
+.footer1 h1{
+    font-family: 'Open Sans',sans-serif;
+    font-size:10pt;
+    color: #444444;
+    
+    
+    
+    text-align: center;
+    
+}
+
+.footer2{
+
+	padding-bottom:2%;
+	padding-top:4%;
+	padding-left:3%;
+	padding-right:3%;
+	background-color:#f5f5f5;
+	
+	
+    margin: 0px auto 0px auto;
+	
+	color: #5e5e5e;
+
+}
+
+.footer2 h1{
+    font-family: 'Open Sans',sans-serif;
+    font-size:10pt;
+    color: #2b2b2b;
+    
+    
+    
+    text-align: center;
+    
+}
+
+.footer2 h2{
+    font-family: 'Open Sans',sans-serif;
+    font-size:15pt;
+    
+    color: #2b2b2b;
+    
+    
+    text-align: left;
+    
+}
+
+.footer2 h3{
+    font-family: 'Open Sans',sans-serif;
+    font-size:12pt;
+    color: #717171;
+    
+    
+    
+    text-align: left;
+    
+}
+
+.tarjeta{
+	border-radius: 1vh;
+	padding-bottom:2%;
+	padding-top:2%;
+	padding-left:3%;
+	padding-right:3%;
+	background-color:#ffffff;
+	//filter: drop-shadow(5px 5px 12px rgba(0,0,0,0.5));
+
+}
+
+.tarjeta-gris{
+	border-radius: 1vh;
+	padding-bottom:2%;
+	padding-top:2%;
+	padding-left:3%;
+	padding-right:3%;
+	background-color:#f5f5f5;
+	//filter: drop-shadow(5px 5px 12px rgba(0,0,0,0.5));
+
+}
+
+.burbuja{
+	border-radius: 30px;
+	padding-bottom:2%;
+	padding-top:2%;
+	padding-left:3%;
+	padding-right:3%;
+	background-color:#1975ff;
+	filter: drop-shadow(5px 5px 12px rgba(0,0,0,0.5));
+	
+	font-family: 'Ubuntu',sans-serif;
+    font-size:12pt;
+    font-size:1.5vw;
+    color: #ffffff;
+	
+    text-align: center;
+
+}
+
+.burbujaBlanca{
+	border-radius: 20px;
+	padding-bottom:10px;
+	padding-top:10px;
+	padding-left:10px;
+	padding-right:10px;
+	background-color:#ffffff;
+	filter: drop-shadow(5px 5px 12px rgba(0,0,0,0.5));
+	
+	font-family: 'Open Sans',sans-serif;
+    font-size:20pt;
+    color: #4B8DBE;
+    
+    text-shadow: 0px 0px 60px #fff;
+    
+    margin: 40px auto 35px auto;
+    margin: 2.79vw 0px 2.44vw 0px;
+
+}
+
+.cuadro table tr td{
+    
+    padding: 0px 40px;
+    padding: 0px 2.79vw;
+    
+    vertical-align: middle;
+    
+}
+
+.cuadro{
+   
+   padding: 10vh auto 10vh auto;
+    
+    border-bottom: 1px solid #ccc;
+    /*box-shadow: 0px 0px 20px #888;*/
+
+    
+}
+
+
+.cuadro h1{
+    font-family: 'Open Sans',sans-serif;
+    font-size:34pt;
+    font-size:3.2vw;
+    color: #3d3d3d;
+    
+    
+    margin: 30px 0px 10px 0px;
+    margin: 2.09vw 0px 0.7vw 0px;
+    
+    text-align: center;
+    
+}
+
+
+.cuadro h2{
+    font-family: 'Open Sans',sans-serif;
+    font-size:28pt;
+    font-size:2.3vw;
+    color: #5b5b5b;
+        
+    margin: 10px 0px 35px 0px;
+    margin: 0.7vw 0px 2.44vw 0px;
+    
+    text-align: center;
+    
+}
+
+.cuadro p{
+
+font-family: 'Open Sans',sans-serif;
+    font-size:23pt;
+    font-size:1.9vw;
+    color: #5b5b5b;
+
+    margin: 10px 10% 10px 10%;
+    margin: 0.7vw 10% 0.7vw 10%;
+	text-align:justify;
+    
+}
+
+
+
+.cuadro .picture, .cuadro .picture:visited, .cuadro .picture img{
+    
+	padding-top:10%;
+	padding-bottom:10%;
+	padding-left:2%;
+	padding-right:5%;
+    border:0;
+    transition: 0.3s;
+	filter: drop-shadow(5px 5px 12px rgba(0,0,0,0.5));
+
+    
+}
+
+.logo {
+
+	width:100%;
+
+}
+
+.titulo h1{
+	color:#035398;
+}
+
+.titulo h2{
+	color:#2f9ffe;
+}
+
+#a, a:visited, a:hover, a:link,a:active {
+    color: #ff68bd;
+}
+
+
+
+@keyframes led{
+  0% {
+    background-color: #333;
+    box-shadow: 0px 0px 0px 0px #333;
+  }
+  50%{
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px #fff;
+  }
+  100%{
+    background-color: #333;
+    box-shadow: 0px 0px 0px 0px #333;
+  }
+}
+
+.notification.on .badge{
+  height: 0.7vw;
+  width: 0.7vw;
+  display: table;
+  position: absolute;
+  float: left;
+  background-color: #333;
+  border-radius: 8vw;
+  margin-top: 1vh;
+  margin-left: 2vw;
+  box-shadow: none;
+  animation: led 2s infinite;
+}
+
+
+.smartphone{
+  
+  display: table;
+  margin: 0 auto;
+  padding: 2%;
+  background-color: #333;
+  border-bottom-left-radius: 2vw;
+  border-bottom-right-radius: 2vw;
+  border-top-left-radius: 2vw;
+  border-top-right-radius: 2vw;
+  position: relative;
+  border: solid 0.1vh #222;
+  padding-bottom: 7%;
+}
+
+
+
+.altavoz{
+  border-radius: 6vh;
+  height: 1vh;
+  width: 34%;
+  display: table;
+  background-color: #444;
+  border: solid 0.1vh #222;
+  margin: 0 auto;
+  margin-top: 1vh;
+  
+}
+
+.controls, .header{
+  height: 3vw;
+  display: table;
+  width: 100%;
+  
+}
+
+
+</style>
+
 
 <html><head>
 
 <meta charset="UTF-8">
 
 <meta property="og:title" content="Faicheck" />
-<meta property="og:description" content="Un programa NO OFICIAL de gestión de Faitic" />
-<meta property="og:image" content="https://davovoid.github.io/faicheck/iconFaicheck.png" />
+<meta property="og:description" content="Aplicación NO oficial para la gestión de Faitic" />
+<meta property="og:image" content="https://faicheck.github.io/iconFaicheck.png" />
 
-<meta http-equiv="refresh" content="0; url=faicheck/" />
 
-<title>Redirigiendo al proyecto Faicheck...</title>
+<title>Faicheck</title>
 
 {
   "@context": "http://schema.org",
   "@type": "WebSite",
-  "name": "Faicheck - Un programa NO OFICIAL de gestión de Faitic",
-  "url": "https://davovoid.github.io/faicheck/"
+  "name": "Faicheck - Aplicación NO OFICIAL para la gestión de Faitic",
+  "url": "https://faicheck.github.io/"
+}
+
+
+</head>
+<body style="margin:0px;">
+
+
+<div id="parallax-world-of-ugg">
+  
+<section>
+    <div class="parallax-uno" style="height:100%;min-height:100vh;max-height:100vh">
+	  
+	  
+	  
+	  
+        
+        
+		 <div class="cuadro" style="height:100%;max-height:100vh;min-height:100vh;">
+        <table class="grad" style="height:100%;min-height:100vh;max-height:100vh;"><tr style="margin:auto auto;"><td class="fondogris" style="width:40%;margin: auto auto;">
+		
+		
+			
+		<div class='smartphone zoom-1 notification on'>
+  <span class='btn btn-up-down'></span>
+  <span class='btn btn-power'></span>
+  
+  <section class='header'>
+    <span class='badge'></span>
+    <span class='altavoz'></span>
+  </section>
+		
+            <a class="picturex"><img class="mySlides" src="https://faicheck.github.io/img5.png" style="margin: auto auto;max-height:80vh;max-width:100%"/></a>
+			<a class="picturex"><img class="mySlides" src="https://faicheck.github.io/img4.png" style="margin: auto auto;max-height:80vh;max-width:100%"/></a>
+			<a class="picturex"><img class="mySlides" src="https://faicheck.github.io/img1.png" style="margin: auto auto;max-height:80vh;max-width:100%"/></a>
+			<a class="picturex"><img class="mySlides" src="https://faicheck.github.io/img2.png" style="margin: auto auto;max-height:80vh;max-width:100%"/></a>
+			<a class="picturex"><img class="mySlides" src="https://faicheck.github.io/img3.png"style="margin: auto auto;max-height:80vh;max-width:100%"/></a>
+			
+			
+</div>
+			
+        </td><td  style="width:60%;padding-left:4%;padding-right:4%;">
+		
+			<div  class="titulo" style="margin:auto auto;">
+			
+			<img src="https://faicheck.github.io/faicheck_android.png" class="logo"  />
+        
+        <h1>Descargar archivos de <a href="http://faitic.uvigo.es/">Faitic</a><br /> nunca fue tan fácil</h1>
+        <h2>Disponible para Android™ y ordenador</h2>
+		
+		
+		<table style="max-height:50vh;">
+		<tr>
+		<td style="width:50%;padding:0px;">
+		<a href="https://play.google.com/">
+        <img src="https://faicheck.github.io/google-play-badge.png" class="logoPlay" style="max-height:80vh;width:100%"  />
+        </a>
+		
+		</td>
+		<td style="width:50%;padding:0px;">
+		<a href="https://davovoid.github.io/faicheck/">
+        <img src="https://faicheck.github.io/faicheck-ordenador.png" class="logoPlay" style="max-height:80vh;width:100%" />
+        </a>
+		
+		</td>
+		
+		</tr>
+		</table>
+		
+		
+        <h3 class="burbuja">Aplicación NO oficial</h3>
+		
+		</div>
+			
+		</td></tr></table></div>
+        
+		
+		
+		
+		
+    </div>
+        
+		
+		
+		
+		
+		
+
+        
+</section>
+
+<section>
+    <div class="parallax-seis">
+              <div class="cuadro" >
+        <td class="td">
+			<div class="tarjeta-gris">
+            <h1>¿Qué es Faicheck?</h1>
+            <h2>Faicheck se conecta a tu cuenta de Faitic, la plataforma de la Universidad de Vigo, e interactúa con ella. En tu teléfono o en tu ordenador.</h2>
+			
+		</div></td></div>
+    </div>
+</section>
+
+<section>
+    <div class="parallax-dos">
+              <div class="cuadro" >
+        <table><tr><td style="width:40%;">
+            <a class="picture"><img src="https://faicheck.github.io/img1.png" style="width:100%" /></a>
+        </td><td class="td">
+			<div class="tarjeta">
+            <h1>Con o sin internet</h1>
+            <h2>Tus archivos siempre accesibles y ordenados</h2>
+            <p>Faicheck te permite entrar en Faitic y visualizar todos tus archivos desde la aplicación. Si descargas un archivo, se guardará en tu teléfono y estará siempre accesible y ordenado.</p>
+        </div></td></tr></table></div>
+    </div>
+</section>
+  
+  <section>
+    <div class="parallax-tres">
+      <div class="cuadro" >
+        <table><tr><td class="td">
+			<div class="tarjeta">
+            <h1>Tus asignaturas te esperan</h1>
+            <h2>Mantenemos el orden para que todo sea igual</h2>
+            <p>En cuanto metes tus datos ya puedes acceder a la lista de materias. Con o sin Internet te guardamos esta lista para ordenar todo lo que descargues.</p>
+        </div></td><td style="width:40%;">
+            <a class="picture"><img src="https://faicheck.github.io/img2.png" style="width:100%" /></a>
+        </td></tr></table></div>
+    </div>
+</section>
+
+<section>
+    <div class="parallax-cuatro">
+              <div class="cuadro" >
+        <table><tr><td style="width:40%;">
+            <a class="picture"><img src="https://faicheck.github.io/img3.png" style="width:100%" /></a>
+        </td><td class="td">
+			<div class="tarjeta">
+            <h1>Tus archivos y un mundo de posibilidades</h1>
+            <h2>¿Por qué limitarse a descargar?</h2>
+            <p>No guardes lo que ya no necesitas. Si descargas algo y con el tiempo ya no lo quieres, simplemente con dos clicks puedes eliminarlo. ¿Fácil verdad?</p>
+        </div></td></tr></table></div>
+    </div>
+</section>
+  
+  <section>
+    <div class="parallax-cinco">
+      <div class="cuadro" >
+        <table><tr><td class="td">
+			<div class="tarjeta">
+            <h1>En Faicheck no nos limitamos a lo de siempre</h1>
+            <h2>La aplicación imprescindible para el estudiante</h2>
+            <p>Los horarios en papel se pierden y rompen. Guarda tu horario inteligente en Faicheck. Interfaz simple y te avisamos en cada clase.</p>
+        </div></td><td style="width:40%;">
+            <a class="picture"><img src="https://faicheck.github.io/img4.png" style="width:100%" /></a>
+        </td></tr></table></div>
+    </div>
+</section>
+
+<section>
+    <div class="parallax-seis">
+              <div class="cuadro" >
+        <table><tr><td style="width:40%;">
+            <a class="picture"><img src="https://faicheck.github.io/img5.png" style="width:100%" /></a>
+        </td><td class="td">
+			<div class="tarjeta">
+            <h1>También importa el transporte</h1>
+            <h2>Para ir a clase primero tienes que llegar</h2>
+            <p>Como el transporte siempre es importante trabajamos con otras aplicaciones para obtener la máxima información posible. Solo desliza la pantalla y encuentra la parada más cercana y los próximos buses.</p>
+        </div></td></tr></table></div>
+    </div>
+</section>
+  
+  <section>
+    <div class="parallax-siete">
+      <div class="cuadro" >
+        <table><tr><td class="td">
+			<div class="tarjeta">
+            <h1>Con búsqueda inteligente</h1>
+            <h2>Compatible con Blue</h2>
+            <p>Asistentes personales en todas partes, también en Faicheck. Trabajamos con Blue, un asistente personal en español, para conseguir entenderte mejor y saber que nos pides. ¿Quieres descargar todos los archivos en una asignatura? Solo tienes que pedirlo.</p>
+        </div></td><td style="width:40%;">
+            <a class="picture"><img src="https://faicheck.github.io/img6.png" style="width:100%" /></a>
+        </td></tr></table></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="parallax-seis">
+              <div class="cuadro" >
+        <td class="td">
+			<div class="tarjeta">
+            <h1>Disponibilidad de Blue y la información sobre el transporte</h1>
+            <h2>Compatible pero por separado</h2>
+            <p>Faicheck Android interactúa con otras aplicaciones compatibles siempre que estas estén instaladas. Por el momento ni Blue ni la aplicación necesaria para obtener la información del transporte están disponibles. Ambas aplicaciones son externas al proyecto Faicheck y se tendrán que obtener desde el Google Play por separado cuando sean publicadas.</p>
+			
+		</div></td></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="parallax-seis">
+              <div class="cuadro" >
+        <td class="td">
+			<div class="tarjeta-gris">
+            <h1>Si sabes programar podrás modificarlo</h1>
+            <h2>La plataforma Faicheck es de código abierto</h2>
+            <p>Faicheck Android tiene su origen en <a href="https://github.com/davovoid/faitic-checker">Faicheck</a>, una aplicación pensada para ordenadores desarrollada por <a href="https://github.com/davovoid/">David Ricardo Araújo Piñeiro (davovoid)</a>. Usando parte de su código, hemos desarrollado esta aplicación pensada para llevar a todas horas en nuestro teléfono. Ambas plataformas son de código abierto bajo la <a href="https://www.gnu.org/licenses/quick-guide-gplv3.html">licencia GPL V3</a>. El objetivo es conseguir una mayor transparencia con el usuario a la par que un mejor servicio. Si quieres saber más, podrás encontrar las dos versiones de la plataforma Faicheck en GitHub.</p>
+			
+		</div></td></div>
+    </div>
+</section>
+
+<section>
+    <div class="parallax-seis">
+              <div class="cuadro" >
+        <td class="td">
+			<div class="tarjeta">
+            <h1>Faicheck no ha sido creado por la Universidad de Vigo</h1>
+            <h2>Los creadores son alumnos de la universidad</h2>
+            
+			<p>Para terminar, queremos dejar claro que ninguna versión de Faicheck ha sido desarrollada por la <a href="https://uvigo.gal/">Universidad de Vigo</a>. Tanto en la versión de escritorio en la que se basa esta aplicación como en esta misma aplicación, los creadores han sido alumnos de dicha universidad. Por este motivo insistimos en que no es una herramienta oficial de <a href="http://faitic.uvigo.es/">Faitic</a> ni de la Universidad de Vigo, propietaria de <a href="http://faitic.uvigo.es/">Faitic</a> aunque si se conecta a los servidores oficiales de <a href="http://faitic.uvigo.es/">Faitic</a>.</p>
+		
+		</div></td></div>
+    </div>
+</section>
+
+<section>
+    <div class="parallax-seis">
+              <div class="cuadro" >
+			  <div class="tarjeta-gris">
+        
+			<table style="max-height:10%;min-height:10%;height:50px;">
+		<tr>
+		<td style="width:50%;padding:0px;">
+		<a href="https://play.google.com/">
+        <img src="https://faicheck.github.io/google-play-badge.png" class="logoPlay" style="max-height:80vh;width:100%"  />
+        </a>
+		
+		</td>
+		<td style="width:50%;padding:0px;">
+		<a href="https://davovoid.github.io/faicheck/">
+        <img src="https://faicheck.github.io/faicheck-ordenador.png" class="logoPlay" style="max-height:80vh;width:100%" />
+        </a>
+		
+		</td>
+		
+		</tr>
+		</table>
+		
+		</div>
+        
+		</div>
+    </div>
+</section>
+
+<section>
+
+		
+			<div class="footer1">
+
+			<h1 style="margin-left:30%;margin-right:30%;"><a href="https://faicheck.github.io/privacidad.html">Política de privacidad</a></h1>
+			</br>
+            <h1>© 2017, Cristian Do Carmo Rodríguez, Todos los derechos reservados.</h1>
+			<h1>Correo de contacto <a href="mailto:faicheck.oficial@gmail.com">faicheck.oficial@gmail.com</a> </h1>
+			</br>
+			
+			<div class="footer2">
+			</b>
+			<h2>Nuestra letra pequeña es bien grande:</h2>
+			<h3>Para la función de transporte es necesario instalar otra aplicación por separado al igual que para disponer de las funciones de Blue.</h3>
+            <h3>Faicheck (Android) forma parte del proyecto Faicheck. Las imágenes pueden variar en función de la última versión en la que estemos trabajando o el dispositivo.</h3>
+			<h3>Google Play y el logotipo de Google Play son marcas comerciales de Google Inc.</h3>
+			<h3>Android es una marca comercial de Google Inc.</h3>
+		</div></div>
+</section>
+
+
+  
+</div>
+
+</body>
+
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 </script>
 
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "Organization",
-  "url": "https://davovoid.github.io/faicheck/",
-  "logo": "https://davovoid.github.io/faicheck/iconFaicheck.png"
-}
-</script>
-
-
-<style type="text/css">
-
-body{
-    
-    margin:100px auto;
-    width:80%;
-    
-    font-family: sans-serif;
-    
-    text-align: center;
-    
-}
-
-a, a:visited{
-    
-    color: #4B8DBE;
-    text-decoration: underline;
-    
-}
-
-a:hover{
-    
-    text-decoration:none;
-    
-}
-
-</style>
-
-</head><body>
-
-Redirigiendo al proyecto <i>Faicheck</i>. Si no fuera redirigido automáticamente pulse <a href="faicheck/">aquí</a> para continuar.
-
-</body></html>
+</html>
