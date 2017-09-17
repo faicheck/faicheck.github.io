@@ -87,12 +87,12 @@
 	#parallax-world-of-ugg .parallax-seis {background: #eeeeee;padding-top: 0%; padding-bottom: 0%; overflow: hidden; position: relative; width: 100%; height:100%;
 		}
 
-	.fondo-uno {background: #F8BBD0;padding-top: 0%; padding-bottom: 0%; overflow: hidden; position: relative; width: 100%; height:100%;border-bottom-right-radius:10vw;border-top-right-radius:10vw;box-shadow: inset 0px 0px 26px rgba(0,0,0,0.5);}
-	.fondo-dos {background: #A5D6A7;padding-top: 0%; padding-bottom: 0%; overflow: hidden; position: relative; width: 100%; height:100%;border-bottom-left-radius:10vw;border-top-left-radius:10vw;box-shadow: inset 0px 0px 26px rgba(0,0,0,0.5);}
-	.fondo-tres {background: #9FA8DA;padding-top: 0%; padding-bottom: 0%; overflow: hidden; position: relative; width: 100%; height:100%;border-bottom-right-radius:10vw;border-top-right-radius:10vw;box-shadow: inset 0px 0px 26px rgba(0,0,0,0.5);}
-	.fondo-cuatro {background: #FFAB91;padding-top: 0%; padding-bottom: 0%; overflow: hidden; position: relative; width: 100%; height:100%;border-bottom-left-radius:10vw;border-top-left-radius:10vw;box-shadow: inset 0px 0px 26px rgba(0,0,0,0.5);}
-	.fondo-cinco {background: #CE93D8;padding-top: 0%; padding-bottom: 0%; overflow: hidden; position: relative; width: 100%; height:100%;border-bottom-right-radius:10vw;border-top-right-radius:10vw;box-shadow: inset 0px 0px 26px rgba(0,0,0,0.5);}
-	.fondo-seis {background: #90CAF9;padding-top: 0%; padding-bottom: 0%; overflow: hidden; position: relative; width: 100%; height:100%;border-bottom-left-radius:10vw;border-top-left-radius:10vw;box-shadow: inset 0px 0px 26px rgba(0,0,0,0.5);}
+	.fondo-uno {background: #F8BBD0;padding-top: 0%; padding-bottom: 0%; overflow: hidden; position: relative; width: 100%; height:100%;border-bottom-right-radius:10vw;border-top-right-radius:10vw;padding-left:30%;padding-right:30%;}
+	.fondo-dos {background: #A5D6A7;padding-top: 0%; padding-bottom: 0%; overflow: hidden; position: relative; width: 100%; height:100%;border-bottom-left-radius:10vw;border-top-left-radius:10vw;}
+	.fondo-tres {background: #9FA8DA;padding-top: 0%; padding-bottom: 0%; overflow: hidden; position: relative; width: 100%; height:100%;border-bottom-right-radius:10vw;border-top-right-radius:10vw;}
+	.fondo-cuatro {background: #FFAB91;padding-top: 0%; padding-bottom: 0%; overflow: hidden; position: relative; width: 100%; height:100%;border-bottom-left-radius:10vw;border-top-left-radius:10vw;}
+	.fondo-cinco {background: #CE93D8;padding-top: 0%; padding-bottom: 0%; overflow: hidden; position: relative; width: 100%; height:100%;border-bottom-right-radius:10vw;border-top-right-radius:10vw;}
+	.fondo-seis {background: #90CAF9;padding-top: 0%; padding-bottom: 0%; overflow: hidden; position: relative; width: 100%; height:100%;border-bottom-left-radius:10vw;border-top-left-radius:10vw;}
 	
 	.fondo-zero {padding-top: 0%; padding-bottom: 0%; overflow: hidden; position: relative; width: 100%; height:100%;border-bottom-right-radius:10vw;border-top-right-radius:10vw;}
 	
@@ -341,49 +341,28 @@
 
 
 
-	@keyframes led{
-	  0% {
-		background-color: #333;
-		box-shadow: 0px 0px 0px 0px #333;
-	  }
-	  50%{
-		background-color: white;
-		box-shadow: 0px 0px 5px 0px #fff;
-	  }
-	  100%{
-		background-color: #333;
-		box-shadow: 0px 0px 0px 0px #333;
-	  }
-	}
-
-	.notification.on .badge{
-	  height: 0.7vw;
-	  width: 0.7vw;
-	  display: table;
-	  position: absolute;
-	  float: left;
-	  background-color: #333;
-	  border-radius: 8vw;
-	  margin-top: 1vh;
-	  margin-left: 2vw;
-	  box-shadow: none;
-	  animation: led 2s infinite;
-	}
 
 
 	.smartphone{
 	  
 	  display: table;
-	  margin: 0 auto;
-	  padding: 2%;
+	  margin: auto auto;
+	  padding-left: 1.3%;
+	  padding-right:1.3%;
 	  background-color: #333;
-	  border-bottom-left-radius: 2vw;
-	  border-bottom-right-radius: 2vw;
-	  border-top-left-radius: 2vw;
-	  border-top-right-radius: 2vw;
+	  border-bottom-left-radius: 4%;
+	  border-bottom-right-radius: 4%;
+	  border-top-left-radius: 4%;
+	  border-top-right-radius: 4%;
 	  position: relative;
 	  border: solid 0.1vh #222;
-	  padding-bottom: 7%;
+	  padding-bottom: 4%;
+	  padding-top:4%;
+	  margin-left:26%;
+	  margin-right:26%;
+	  margin-bottom:5%;
+	  margin-top:5%;
+	  border-radius: 3vh;
 	  filter: drop-shadow(5px 5px 12px rgba(0,0,0,0.5));
 	  
 	}
@@ -391,25 +370,17 @@
 
 
 	.altavoz{
-	  border-radius: 6vh;
-	  height: 1vh;
-	  width: 34%;
-	  display: table;
-	  background-color: #444;
-	  border: solid 0.1vh #222;
-	  margin: 0 auto;
-	  margin-top: 1vh;
 	  
 	}
 
 	.controls, .header{
-	  height: 3vw;
+	  height: 2vw;
 	  display: table;
 	  width: 100%;
 	  
 	}
 	
-	table.tabler { width: 100%; }
+	table.tabler { width: 80%; }
 
 
 
@@ -537,31 +508,16 @@ li.right a.enlace:hover:not(.active) {
 		<div >
 				  <div class="cuadro" style="border-bottom: 0px;background-color:#eeeeee;height:calc(100vh - 160px);max-height:calc(100vh - 160px);min-height:calc(100vh - 160px);box-shadow: inset 0px 0px 16px rgba(0,0,0,0.5);margin-left:-8px;margin-right:-8px;margin-top:-8px;">
 			<table><tr><td style="width:40%;" class="fondo-zero"><div class="phonea">
-				<div class='smartphone zoom-1 notification on' style="margin: 5vw auto;">
-	  <span class='btn btn-up-down'></span>
-	  <span class='btn btn-power'></span>
+				<div class='smartphone  notification on' >
 	  
-	  <section class='header'>
-		<span class='badge'></span>
-		<span class='altavoz'></span>
-	  </section>
 			
 				<div style="margin: auto auto;max-height:55vh;max-width:100%;">
-				<a class="mySlides" style="display:none;"><picture class="picturex" style="margin: auto auto;max-height:55vh;max-width:100%;">
+				<a><picture class="picturex" style="margin: auto auto;max-height:55vh;max-width:100%;">
 	  <source srcset="https://faicheck.github.io/img1.webp" type="image/webp">
 	  <source srcset="https://faicheck.github.io/img1.jpg" type="image/jpeg"> 
 	  <img src="https://faicheck.github.io/img1.jpg" alt="Alt Text!" style="margin: auto auto;max-height:55vh;max-width:100%;"></a>
 							
-								<a class="mySlides" style="display:none;"><picture class="picturex" style="margin: auto auto;max-height:55vh;max-width:100%;">
-	  <source srcset="https://faicheck.github.io/img2.webp" type="image/webp">
-	  <source srcset="https://faicheck.github.io/img2.jpg" type="image/jpeg"> 
-	  <img src="https://faicheck.github.io/img2.jpg" alt="Alt Text!" style="margin: auto auto;max-height:55vh;max-width:100%;"></a>
-							
-							
-							<a class="mySlides" style="display:none;"><picture class="picturex" style="margin: auto auto;max-height:55vh;max-width:100%;">
-	  <source srcset="https://faicheck.github.io/img3.webp" type="image/webp">
-	  <source srcset="https://faicheck.github.io/img3.jpg" type="image/jpeg"> 
-	  <img src="https://faicheck.github.io/img3.jpg" alt="Alt Text!" style="margin: auto auto;max-height:55vh;max-width:100%;"></a>
+								
 				</div>
 	</div>
 			</div></td><td  style="width:50%;padding-left:6%;padding-right:6%;">
@@ -637,14 +593,8 @@ li.right a.enlace:hover:not(.active) {
 		<div >
 				  <div class="cuadro" style="border-bottom: 0px;">
 			<table><tr><td style="width:40%;" class="fondo-uno">
-				<div class='smartphone zoom-1 notification on' style="margin: 5vw auto;">
-	  <span class='btn btn-up-down'></span>
-	  <span class='btn btn-power'></span>
+				<div class='smartphone  notification on' >
 	  
-	  <section class='header'>
-		<span class='badge'></span>
-		<span class='altavoz'></span>
-	  </section>
 			
 				
 				<a><picture class="picturex" style="margin: auto auto;max-height:80vh;max-width:100%;">
@@ -671,14 +621,8 @@ li.right a.enlace:hover:not(.active) {
 				<h2>Mantenemos el orden para que todo sea igual</h2>
 				<p>En cuanto metes tus datos ya puedes acceder a la lista de materias. Con o sin Internet te guardamos esta lista para ordenar todo lo que descargues.</p>
 			</div></td><td style="width:40%;" class="fondo-dos">
-				<div class='smartphone zoom-1 notification on' style="margin: 5vw auto;">
-	  <span class='btn btn-up-down'></span>
-	  <span class='btn btn-power'></span>
+				<div class='smartphone  notification on' >
 	  
-	  <section class='header'>
-		<span class='badge'></span>
-		<span class='altavoz'></span>
-	  </section>
 			
 				
 				<a><picture class="picturex" style="margin: auto auto;max-height:80vh;max-width:100%;">
@@ -695,14 +639,8 @@ li.right a.enlace:hover:not(.active) {
 		<div >
 				  <div class="cuadro" style="border-bottom: 0px;">
 			<table><tr><td style="width:40%;" class="fondo-tres">
-				<div class='smartphone zoom-1 notification on' style="margin: 5vw auto;">
-	  <span class='btn btn-up-down'></span>
-	  <span class='btn btn-power'></span>
+				<div class='smartphone  notification on' >
 	  
-	  <section class='header'>
-		<span class='badge'></span>
-		<span class='altavoz'></span>
-	  </section>
 			
 				
 				<a><picture class="picturex" style="margin: auto auto;max-height:80vh;max-width:100%;">
@@ -729,14 +667,8 @@ li.right a.enlace:hover:not(.active) {
 				<h2>La aplicación imprescindible para el estudiante</h2>
 				<p>Los horarios en papel se pierden y rompen. Guarda tu horario inteligente en Faicheck. Interfaz simple y te avisamos en cada clase.</p>
 			</div></td><td style="width:40%;" class="fondo-cuatro">
-				<div class='smartphone zoom-1 notification on' style="margin: 5vw auto;">
-	  <span class='btn btn-up-down'></span>
-	  <span class='btn btn-power'></span>
+				<div class='smartphone  notification on' >
 	  
-	  <section class='header'>
-		<span class='badge'></span>
-		<span class='altavoz'></span>
-	  </section>
 			
 				
 				<a><picture class="picturex" style="margin: auto auto;max-height:80vh;max-width:100%;">
@@ -753,14 +685,8 @@ li.right a.enlace:hover:not(.active) {
 		<div>
 				  <div class="cuadro" style="border-bottom: 0px;">
 			<table><tr><td style="width:40%;" class="fondo-cinco">
-				<div class='smartphone zoom-1 notification on' style="margin: 5vw auto;">
-	  <span class='btn btn-up-down'></span>
-	  <span class='btn btn-power'></span>
+				<div class='smartphone  notification on' >
 	  
-	  <section class='header'>
-		<span class='badge'></span>
-		<span class='altavoz'></span>
-	  </section>
 			
 				
 				<a><picture class="picturex" style="margin: auto auto;max-height:80vh;max-width:100%;">
@@ -787,14 +713,8 @@ li.right a.enlace:hover:not(.active) {
 				<h2>Compatible con Blue</h2>
 				<p>Asistentes personales en todas partes, también en Faicheck. Trabajamos con Blue, un asistente personal en español, para conseguir entenderte mejor y saber que nos pides. ¿Quieres descargar todos los archivos en una asignatura? Solo tienes que pedirlo.</p>
 			</div></td><td style="width:40%;" class="fondo-seis">
-				<div class='smartphone zoom-1 notification on' style="margin: 5vw auto;">
-	  <span class='btn btn-up-down'></span>
-	  <span class='btn btn-power'></span>
+				<div class='smartphone  notification on' >
 	  
-	  <section class='header'>
-		<span class='badge'></span>
-		<span class='altavoz'></span>
-	  </section>
 			
 				
 				<a><picture class="picturex" style="margin: auto auto;max-height:80vh;max-width:100%;">
@@ -916,22 +836,7 @@ li.right a.enlace:hover:not(.active) {
 
 	</body>
 
-	<script>
-	var slideIndex = 0;
-	carousel();
-
-	function carousel() {
-		var i;
-		var x = document.getElementsByClassName("mySlides");
-		for (i = 0; i < x.length; i++) {
-		  x[i].style.display = "none"; 
-		}
-		slideIndex++;
-		if (slideIndex > x.length) {slideIndex = 1} 
-		x[slideIndex-1].style.display = "block"; 
-		setTimeout(carousel, 2000); // Change image every 2 seconds
-	}
-	</script>
+	
 	
 	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
